@@ -514,6 +514,10 @@ body {
   margin-left: 70px;
 }
 
+.form-footer {
+  margin-left: 93px;
+}
+
 .footer {
   background-color: var(--background-color-hero-roof);
   padding: 60px 0;
@@ -754,4 +758,63 @@ body {
 
 .closes {
   fill: var(--studio-color);
+  transition: fill 250ms var(--color-transition);
 }
+
+.closes:hover,
+.closes:focus {
+  fill: var(--title-text-color);
+}
+
+.button-telegram {
+  width: 200px;
+  height: 50px;
+  background-color: var(--title-text-color);
+ 
+  border-color: transparent;
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  
+
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+}
+
+.submit-telegram {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.input-label {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--background-color-hero-roof);
+  padding-left: 16px;
+  
+
+  
+  
+  font-size: 16px;
+  line-height: 1.25;
+  
+
+  
+  letter-spacing: 0.03em;
+
+  
+}
+
+.form-footer {
+  margin-left: 93px;
+}
+
+
+
