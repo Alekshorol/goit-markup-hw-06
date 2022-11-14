@@ -556,6 +556,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .social-footer {
@@ -754,15 +755,12 @@ body {
   border-radius: 50%;
   background-color: var(--white-color);
   cursor: pointer;
-}
-
-.closes {
   fill: var(--studio-color);
   transition: fill 250ms var(--color-transition);
 }
 
-.closes:hover,
-.closes:focus {
+.button-modal-close:hover,
+.button-modal-close:focus {
   fill: var(--title-text-color);
 }
 
@@ -770,7 +768,7 @@ body {
   width: 200px;
   height: 50px;
   background-color: var(--title-text-color);
- 
+
   border-color: transparent;
   border-radius: 4px;
   margin-left: 12px;
@@ -779,7 +777,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  
 
   letter-spacing: 0.06em;
 
@@ -798,23 +795,10 @@ body {
   border-radius: 4px;
   background-color: var(--background-color-hero-roof);
   padding-left: 16px;
-  
 
-  
-  
   font-size: 16px;
   line-height: 1.25;
-  
 
-  
   letter-spacing: 0.03em;
-
-  
+  color: var(--white-color);
 }
-
-.form-footer {
-  margin-left: 93px;
-}
-
-
-
