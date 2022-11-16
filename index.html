@@ -605,32 +605,33 @@
           </div>
           <div class="modal-list">
             <label for="tel" class="icon-label">Телефон</label>
-            <input type="text" name="tel" id="tel" class="icon-input" />
+            <input type="tel" name="tel" id="tel" class="icon-input" />
             <svg width="13" height="13" class="icon-svg">
               <use href="./images/icons.svg#icon-phonemodal"></use>
             </svg>
           </div>
           <div class="modal-list">
             <label for="email" class="icon-label">Пошта</label>
-            <input type="text" name="email" id="email" class="icon-input" />
+            <input type="email" name="email" id="email" class="icon-input" />
             <svg width="15" height="12" class="icon-svg">
               <use href="./images/icons.svg#icon-mailmodal"></use>
             </svg>
           </div>
           <div class="modal-list">
             <label for="comment" class="icon-label">Коментар</label>
-            <input
-              type="text"
+            <textarea
               name="comment"
               id="comment"
+              rows="6"
               class="icon-input-comment"
               placeholder="Введіть текст"
-            />
+            ></textarea>
+
             <div class="checkbox-modal">
               <input type="checkbox" name="policy" id="policy" />
               <label for="policy"
                 >Погоджуюся з розсилкою та приймаю
-                <span class="terms">Умови договору</span></label
+                <a href="" class="terms">Умови договору</a></label
               >
             </div>
             <button type="submit" class="send-form">Відправити</button>

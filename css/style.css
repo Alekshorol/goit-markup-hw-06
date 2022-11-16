@@ -832,12 +832,13 @@ body {
 }
 
 .icon-input-comment {
-  width: 448px;
-  height: 120px;
-  padding-left: 16px;
+  display: block;
+  max-width: 448px;
+  max-height: 120px;
+  min-height: 120px;
+  padding: 12px 16px;
+
   cursor: pointer;
-  display: flex;
-  padding-bottom: 80px;
 }
 
 .icon-label {
@@ -877,5 +878,4 @@ body {
 
 .terms {
   color: var(--title-text-color);
-  border-bottom: 0.7px solid var(--title-text-color);
 }
