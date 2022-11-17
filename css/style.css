@@ -820,14 +820,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-top: 12px;
 }
 
 .icon-input {
   width: 448px;
-  height: 40px;
-  padding-left: 30px;
+  height: 38px;
+  padding: 0 0 0 30px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -887,3 +887,27 @@ body {
   color: var(--title-text-color);
   cursor: pointer;
 }
+
+/* .checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid var(--second-text-color);
+  border-radius: 2px;
+  
+  
+}
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+
+} */
