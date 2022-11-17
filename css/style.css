@@ -901,7 +901,7 @@ body {
   cursor: pointer;
 }
 
-/* .checkbox-icon {
+.checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -923,4 +923,4 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 
-} */
+}
