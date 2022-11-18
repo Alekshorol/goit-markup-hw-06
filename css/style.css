@@ -817,7 +817,6 @@ body {
 }
 
 .modal-list {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -864,12 +863,15 @@ body {
   color: var(--primary-text-color);
 }
 
+.modal-list-icon {
+  position: relative;
+}
+
 .icon-svg {
   position: absolute;
-  margin-top: 34px;
-  margin-left: 15px;
-  fill: var(--second-text-color);
-  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
 .checkbox-modal {
@@ -905,8 +907,9 @@ body {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 1.8px solid var(--second-text-color);
+  /* border: 1.8px solid var(--second-text-color); */
   border-radius: 2px;
+  background-color: #2196f3;
 }
 
 .checkbox {
@@ -920,4 +923,15 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.checkbox-modal {
+  position: relative;
+}
+
+.agreemodal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  left: 2px;
 }
