@@ -732,10 +732,11 @@ body {
   transform: translate(-50%, -50%);
 
   min-width: 528px;
-  min-height: 581px;
+  /* min-height: 581px; */
 
   background-color: var(--white-color);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .button-modal-close {
@@ -744,6 +745,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 
   top: 8px;
   right: 8px;
@@ -757,6 +759,8 @@ body {
   cursor: pointer;
   fill: var(--studio-color);
   transition: fill 250ms var(--color-transition);
+
+  padding: 0;
 }
 
 .button-modal-close:hover,
@@ -812,19 +816,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  margin-top: 40px;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
-.modal-list {
+.modal-name {
+  text-align: center;
+}
+
+.modal-field {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .icon-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 0 0 0 30px;
   cursor: pointer;
@@ -837,10 +844,11 @@ body {
 
 .icon-input-comment {
   display: block;
-  max-width: 448px;
-  min-width: 448px;
-  max-height: 120px;
-  min-height: 120px;
+  resize: none;
+
+  width: 100%;
+  height: 120px;
+
   padding: 12px 16px;
 
   cursor: pointer;
@@ -850,7 +858,7 @@ body {
   outline: none;
 
   font-size: 12px;
-  line-height: 1.66;
+  line-height: 1.6;
 
   letter-spacing: 0.01em;
 
@@ -859,13 +867,16 @@ body {
 }
 
 .icon-label {
+  display: block;
+  text-align: start;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.66;
+  line-height: 1.6;
 
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .modal-list-icon {
@@ -890,7 +901,7 @@ body {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-left: 164px;
+
   background-color: var(--title-text-color);
   border: transparent;
   color: var(--white-color);
@@ -900,9 +911,10 @@ body {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.8;
 
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .terms {
@@ -930,8 +942,8 @@ body {
 
 .agree-modal {
   display: flex;
-  margin-left: 53px;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .terms-text {
@@ -953,17 +965,19 @@ body {
   border: 1.8px solid var(--second-text-color);
   border-radius: 2px;
   vertical-align: middle;
+  margin-right: 9px;
 }
 
 .elevation {
   position: absolute;
-  top: 3px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 1px;
   fill: var(--white-color);
 }
 
 .modal-list-icon:focus-within .icon-input,
-.modal-list:focus-within .icon-input-comment {
+.modal-field:focus-within .icon-input-comment {
   border-color: var(--title-text-color);
 }
 
